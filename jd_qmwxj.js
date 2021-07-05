@@ -14,7 +14,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let allMessage = '';
-let shareCode = '';
+let shareCode = '80D45FB48625D252261BB80365B15E9E';
 if (process.env.shareCode) {
   shareCode = process.env.shareCode;
 }
