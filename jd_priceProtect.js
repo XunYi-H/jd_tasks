@@ -24,7 +24,15 @@ const unifiedGatewayName = 'https://api.m.jd.com'
 
 // 请先配置 token!!!最好抓APP的！
 let tokens = '' // @ 分隔
-tokens = [process.env.JD_PRICE_token];
+if (process.env.JD_PRICE_TOKEN) {
+  if (process.env.JD_PRICE_TOKEN.indexOf('@') > -1) {
+    tokens = process.env.JD_PRICE_TOKEN.split('@');
+  } else if (process.env.JD_PRICE_TOKEN.indexOf('\n') > -1) {
+    tokens = process.env.JD_PRICE_TOKEN.split('\n');
+  } else {
+    tokens = [process.env.JD_PRICE_TOKEN];
+  }
+}
 $.tokenList = []
 $.HyperParam = {
     sid_hid: '',
