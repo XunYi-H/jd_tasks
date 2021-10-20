@@ -318,6 +318,7 @@ function city_lotteryAward() {
     })
   })
 }
+/*
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
@@ -341,6 +342,7 @@ function readShareCode() {
     resolve()
   })
 }
+*/
 //格式化助力码
 function shareCodesFormat() {
   return new Promise(async resolve => {
