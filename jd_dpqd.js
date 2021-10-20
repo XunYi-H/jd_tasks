@@ -17,7 +17,7 @@ let vender = ''
 let num = 0
 let shopname = ''
 const token = [
-  'c9f2b6ffecd042afbd608a698f1d741d',//2-3天70京豆；
+  'C9F2B6FFECD042AFBD608A698F1D741D',//2-3天70京豆；
   '9133123518A9C372D79D54407C5DF0F9',//15天100京豆；
   'B633CA47876BC61E7F639EBED79DDF34',//3天20京豆；
 ]
