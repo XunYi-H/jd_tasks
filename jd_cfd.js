@@ -101,7 +101,7 @@ async function run() {
 
     if($.HomeInfo){
       $.InviteList.push($.HomeInfo.strMyShareId)
-      console.log(`等级:${$.HomeInfo.dwLandLvl} 当前金币:${$.HomeInfo.ddwCoinBalance} 当前财富:${$.HomeInfo.ddwRichBalance} 助力码:${$.HomeInfo.strMyShareId}`)
+      console.log(`等级:${$.HomeInfo.dwLandLvl} 当前金币:${$.HomeInfo.ddwCoinBalance} 当前财富:${$.HomeInfo.ddwRichBalance} \n【京东账号${$.index}（${$.UserName}）的${$.name}好友互助码】:${$.HomeInfo.strMyShareId}`)
     }
     if($.LeadInfo && $.LeadInfo.dwLeadType == 2){
       await $.wait(2000)
